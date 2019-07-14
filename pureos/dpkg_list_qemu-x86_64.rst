@@ -1,3 +1,5 @@
+Direct output from `dpkg -l` on the Qemu x86_64 image:
+
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
@@ -96,7 +98,7 @@ ii  gcc-8                                8.3.0-6                                
 ii  gcc-8-base:amd64                     8.3.0-6                                        amd64        GCC, the GNU Compiler Collection (base package)
 ii  gcr                                  3.28.1-1                                       amd64        GNOME crypto services (daemon and tools)
 ii  gdb                                  8.2.1-2                                        amd64        GNU Debugger
-ii  gdbm-l10n                            1.18.1-4                                       all          GNU dbm database routines (translation files) 
+ii  gdbm-l10n                            1.18.1-4                                       all          GNU dbm database routines (translation files)
 ii  gen-sshd-host-keys                   1~4.gbp47559d                                  all          Generate sshd's host keys on boot if missing
 ii  genisoimage                          9:1.1.11-3+b2                                  amd64        Creates ISO-9660 CD-ROM filesystem images
 ii  geoclue-2.0                          2.5.2-1                                        amd64        geoinformation service
@@ -405,8 +407,8 @@ ii  libgcrypt20:amd64                    1.8.4-5                                
 ii  libgd3:amd64                         2.2.5-5.2                                      amd64        GD Graphics Library
 ii  libgdata-common                      0.17.9-3                                       all          Library for accessing GData webservices - common data files
 ii  libgdata22:amd64                     0.17.9-3                                       amd64        Library for accessing GData webservices - shared libraries
-ii  libgdbm-compat4:amd64                1.18.1-4                                       amd64        GNU dbm database routines (legacy support runtime version) 
-ii  libgdbm6:amd64                       1.18.1-4                                       amd64        GNU dbm database routines (runtime version) 
+ii  libgdbm-compat4:amd64                1.18.1-4                                       amd64        GNU dbm database routines (legacy support runtime version)
+ii  libgdbm6:amd64                       1.18.1-4                                       amd64        GNU dbm database routines (runtime version)
 ii  libgdk-pixbuf2.0-0:amd64             2.38.1+dfsg-1                                  amd64        GDK Pixbuf library
 ii  libgdk-pixbuf2.0-bin                 2.38.1+dfsg-1                                  amd64        GDK Pixbuf library (thumbnailer)
 ii  libgdk-pixbuf2.0-common              2.38.1+dfsg-1                                  all          GDK Pixbuf library - data files

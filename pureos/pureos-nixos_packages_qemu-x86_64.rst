@@ -28,6 +28,9 @@ debianutils
 desktop-base
 dpkg
 dpkg-dev
+gen-sshd-host-keys
+genisoimage
+ifupdown
 
 No Direct Equivalent:
 ---------------------
@@ -48,6 +51,71 @@ evince-common
 evolution-data-server-common
 folks-common: used folks instead
 fontconfig-config
+g++: used gcc8 instead
+g++-8: used gcc8 instead
+gcc-8-base:amd64: used gcc8 instead
+gdbm-l10n
+gir1.2-accountsservice-1.0
+gir1.2-atk-1.0:amd64
+gir1.2-atspi-2.0:amd64
+gir1.2-champlain-0.12:amd64
+gir1.2-clutter-1.0:amd64
+gir1.2-cogl-1.0:amd64
+gir1.2-coglpango-1.0:amd64
+gir1.2-freedesktop:amd64
+gir1.2-gck-1:amd64
+gir1.2-gcr-3:amd64
+gir1.2-gdesktopenums-3.0:amd64
+gir1.2-gdkpixbuf-2.0:amd64
+gir1.2-gdm-1.0:amd64
+gir1.2-geoclue-2.0:amd64
+gir1.2-geocodeglib-1.0:amd64
+gir1.2-gfbgraph-0.2:amd64
+gir1.2-glib-2.0:amd64
+gir1.2-gnomebluetooth-1.0:amd64
+gir1.2-gnomedesktop-3.0:amd64
+gir1.2-goa-1.0:amd64
+gir1.2-gtk-3.0:amd64
+gir1.2-gtkchamplain-0.12:amd64
+gir1.2-gtkclutter-1.0:amd64
+gir1.2-gweather-3.0:amd64
+gir1.2-harfbuzz-0.0:amd64
+gir1.2-ibus-1.0:amd64
+gir1.2-javascriptcoregtk-4.0:amd64
+gir1.2-json-1.0:amd64
+gir1.2-mutter-3:amd64
+gir1.2-nm-1.0:amd64
+gir1.2-nma-1.0:amd64
+gir1.2-notify-0.7:amd64
+gir1.2-pango-1.0:amd64
+gir1.2-polkit-1.0
+gir1.2-rest-0.7
+gir1.2-rsvg-2.0:amd64
+gir1.2-secret-1:amd64
+gir1.2-soup-2.4:amd64
+gir1.2-upowerglib-1.0:amd64
+gir1.2-webkit2-4.0:amd64
+git-man
+glib-networking-common
+glib-networking-services
+gnome-control-center-data
+gnome-session-bin
+gnome-session-common
+gnome-settings-daemon-common
+gnome-shell-common
+gnome-terminal-data
+gnupg-l10n
+gnupg-utils
+gpg
+gpg-agent
+gpg-wks-client
+gpg-wks-server
+gpgconf
+gpgsm
+gpgv
+grub-pc
+grub-pc-bin
+grub2-common
 
 Missing:
 --------
@@ -60,6 +128,15 @@ dmeventd
 dmsetup
 fbset: available via busybox
 fonts-quicksand
+gtk-update-icon-cache
+haegtesse
+hoichess
+
+Dev Packages:
+-------------
+
+gsettings-desktop-schemas-dev:amd64  3.28.1-1
+
 
 OK:
 ===
@@ -111,116 +188,43 @@ cantarell-fonts
 dejavu_fonts
 lato
 fuse
-ii  g++                                  4:8.3.0-1                                      amd64        GNU C++ compiler
-ii  g++-8                                8.3.0-6                                        amd64        GNU C++ compiler
-ii  gcc                                  4:8.3.0-1                                      amd64        GNU C compiler
-ii  gcc-8                                8.3.0-6                                        amd64        GNU C compiler
-ii  gcc-8-base:amd64                     8.3.0-6                                        amd64        GCC, the GNU Compiler Collection (base package)
-ii  gcr                                  3.28.1-1                                       amd64        GNOME crypto services (daemon and tools)
-ii  gdb                                  8.2.1-2                                        amd64        GNU Debugger
-ii  gdbm-l10n                            1.18.1-4                                       all          GNU dbm database routines (translation files)
-ii  gen-sshd-host-keys                   1~4.gbp47559d                                  all          Generate sshd's host keys on boot if missing
-ii  genisoimage                          9:1.1.11-3+b2                                  amd64        Creates ISO-9660 CD-ROM filesystem images
-ii  geoclue-2.0                          2.5.2-1                                        amd64        geoinformation service
-ii  gettext-base                         0.19.8.1-9                                     amd64        GNU Internationalization utilities for the base system
-ii  gir1.2-accountsservice-1.0           0.6.45-2                                       amd64        GObject introspection data for AccountService
-ii  gir1.2-atk-1.0:amd64                 2.30.0-2                                       amd64        ATK accessibility toolkit (GObject introspection)
-ii  gir1.2-atspi-2.0:amd64               2.30.0-7                                       amd64        Assistive Technology Service Provider (GObject introspection)
-ii  gir1.2-champlain-0.12:amd64          0.12.16-3                                      amd64        C library providing ClutterActor to display maps (GObject introspection)
-ii  gir1.2-clutter-1.0:amd64             1.26.2+dfsg-10                                 amd64        GObject introspection data for the Clutter 1.0 library
-ii  gir1.2-cogl-1.0:amd64                1.22.2-6                                       amd64        GObject introspection data for the Cogl 1.0 library
-ii  gir1.2-coglpango-1.0:amd64           1.22.2-6                                       amd64        GObject introspection data for the CoglPango 1.0 library
-ii  gir1.2-freedesktop:amd64             1.58.3-2                                       amd64        Introspection data for some FreeDesktop components
-ii  gir1.2-gck-1:amd64                   3.28.1-1                                       amd64        GObject introspection data for the GCK library
-ii  gir1.2-gcr-3:amd64                   3.28.1-1                                       amd64        GObject introspection data for the GCR library
-ii  gir1.2-gdesktopenums-3.0:amd64       3.28.1-1                                       amd64        GObject introspection for GSettings desktop-wide schemas
-ii  gir1.2-gdkpixbuf-2.0:amd64           2.38.1+dfsg-1                                  amd64        GDK Pixbuf library - GObject-Introspection
-ii  gir1.2-gdm-1.0:amd64                 3.30.2-3                                       amd64        GObject introspection data for the GNOME Display Manager
-ii  gir1.2-geoclue-2.0:amd64             2.5.2-1                                        amd64        convenience library to interact with geoinformation service (introspection)
-ii  gir1.2-geocodeglib-1.0:amd64         3.26.1-1                                       amd64        introspection data for geocode-glib library
-ii  gir1.2-gfbgraph-0.2:amd64            0.2.3-3                                        amd64        GObject library for Facebook Graph API - GObject introspection
-ii  gir1.2-glib-2.0:amd64                1.58.3-2                                       amd64        Introspection data for GLib, GObject, Gio and GModule
-ii  gir1.2-gnomebluetooth-1.0:amd64      3.28.2-3                                       amd64        Introspection data for GnomeBluetooth
-ii  gir1.2-gnomedesktop-3.0:amd64        3.30.2.1-2                                     amd64        Introspection data for GnomeDesktop
-ii  gir1.2-goa-1.0:amd64                 3.30.1-2                                       amd64        Introspection data for GNOME Online Accounts
-ii  gir1.2-gtk-3.0:amd64                 3.24.8+52246+git23fb8e495d-1pureos0            amd64        GTK+ graphical user interface library -- gir bindings
-ii  gir1.2-gtkchamplain-0.12:amd64       0.12.16-3                                      amd64        Gtk+ widget to display maps (GObject introspection)
-ii  gir1.2-gtkclutter-1.0:amd64          1.8.4-4                                        amd64        GObject introspection data for the GTK+ Clutter library
-ii  gir1.2-gweather-3.0:amd64            3.28.2-2                                       amd64        GObject introspection data for the GWeather library
-ii  gir1.2-harfbuzz-0.0:amd64            2.3.1-1                                        amd64        OpenType text shaping engine (GObject introspection data)
-ii  gir1.2-ibus-1.0:amd64                1.5.19-4                                       amd64        Intelligent Input Bus - introspection data
-ii  gir1.2-javascriptcoregtk-4.0:amd64   2.24.3+1320+git923502c69-1pureos0              amd64        JavaScript engine library from WebKitGTK - GObject introspection data
-ii  gir1.2-json-1.0:amd64                1.4.4-2                                        amd64        GLib JSON manipulation library (introspection data)
-ii  gir1.2-mutter-3:amd64                3.30.2-7                                       amd64        GObject introspection data for Mutter
-ii  gir1.2-nm-1.0:amd64                  1.14.6-2                                       amd64        GObject introspection data for the libnm library
-ii  gir1.2-nma-1.0:amd64                 1.8.20-1.1                                     amd64        GObject introspection data for libnma
-ii  gir1.2-notify-0.7:amd64              0.7.7-4                                        amd64        sends desktop notifications to a notification daemon (Introspection files)
-ii  gir1.2-pango-1.0:amd64               1.42.4-6                                       amd64        Layout and rendering of internationalized text - gir bindings
-ii  gir1.2-polkit-1.0                    0.105-25                                       amd64        GObject introspection data for PolicyKit
-ii  gir1.2-rest-0.7                      0.8.1-1                                        amd64        REST service access library (introspection files)
-ii  gir1.2-rsvg-2.0:amd64                2.44.10-2.1                                    amd64        gir files for renderer library for SVG files
-ii  gir1.2-secret-1:amd64                0.18.7-1                                       amd64        Secret store (GObject-Introspection)
-ii  gir1.2-soup-2.4:amd64                2.64.2-2                                       amd64        GObject introspection data for the libsoup HTTP library
-ii  gir1.2-upowerglib-1.0:amd64          0.99.10-1                                      amd64        GObject introspection data for upower
-ii  gir1.2-webkit2-4.0:amd64             2.24.3+1320+git923502c69-1pureos0              amd64        Web content engine library for GTK - GObject introspection data
-ii  git                                  1:2.20.1-2                                     amd64        fast, scalable, distributed revision control system
-ii  git-man                              1:2.20.1-2                                     all          fast, scalable, distributed revision control system (manual pages)
-ii  gjs                                  1.54.3-1                                       amd64        Mozilla-based javascript bindings for the GNOME platform
-ii  glib-networking:amd64                2.58.0-2                                       amd64        network-related giomodules for GLib
-ii  glib-networking-common               2.58.0-2                                       all          network-related giomodules for GLib - data files
-ii  glib-networking-services             2.58.0-2                                       amd64        network-related giomodules for GLib - D-Bus services
-ii  gnome-backgrounds                    3.30.0-1                                       all          Set of backgrounds packaged with the GNOME desktop
-ii  gnome-calendar                       3.30.1-2                                       amd64        Calendar application for GNOME
-ii  gnome-chess                          1:3.30.1-1                                     amd64        simple chess game
-ii  gnome-contacts                       3.32+3158+git9aa4b72-1pureos0                  amd64        Contacts manager for GNOME
-ii  gnome-control-center                 1:3.32.2+19640+gitc08ee1515-1pureos0           amd64        utilities to configure the GNOME desktop
-ii  gnome-control-center-data            1:3.32.2+19640+gite0f69c571-1pureos0           all          configuration applets for GNOME - data files
-ii  gnome-desktop3-data                  3.30.2.1-2                                     all          Common files for GNOME desktop apps
-ii  gnome-keyring                        3.28.2-5                                       amd64        GNOME keyring services (daemon and tools)
-ii  gnome-maps                           3.30.3-1                                       amd64        map application for GNOME
-ii  gnome-online-accounts                3.30.1-2                                       amd64        service to manage online accounts for the GNOME desktop
-ii  gnome-session                        3.30.1-2                                       all          GNOME Session Manager - GNOME 3 session
-ii  gnome-session-bin                    3.30.1-2                                       amd64        GNOME Session Manager - Minimal runtime
-ii  gnome-session-common                 3.30.1-2                                       all          GNOME Session Manager - common files
-ii  gnome-settings-daemon                3.30.2-3                                       amd64        daemon handling the GNOME session settings
-ii  gnome-settings-daemon-common         3.30.2-3                                       all          daemon handling the GNOME session settings - common files
-ii  gnome-shell                          3.30.2-9                                       amd64        graphical shell for the GNOME desktop
-ii  gnome-shell-common                   3.30.2-9                                       all          common files for the GNOME graphical shell
-ii  gnome-terminal                       3.30.2-2                                       amd64        GNOME terminal emulator application
-ii  gnome-terminal-data                  3.30.2-2                                       all          Data files for the GNOME terminal emulator
-ii  gnome-themes-extra-data              3.28-1                                         all          Adwaita GTK+ 2 theme — common files
-ii  gnome-tweaks                         3.30.2-1                                       all          tool to adjust advanced configuration settings for GNOME
-ii  gnupg                                2.2.12-1                                       all          GNU privacy guard - a free PGP replacement
-ii  gnupg-l10n                           2.2.12-1                                       all          GNU privacy guard - localization files
-ii  gnupg-utils                          2.2.12-1                                       amd64        GNU privacy guard - utility programs
-ii  gpg                                  2.2.12-1                                       amd64        GNU Privacy Guard -- minimalist public key operations
-ii  gpg-agent                            2.2.12-1                                       amd64        GNU privacy guard - cryptographic agent
-ii  gpg-wks-client                       2.2.12-1                                       amd64        GNU privacy guard - Web Key Service client
-ii  gpg-wks-server                       2.2.12-1                                       amd64        GNU privacy guard - Web Key Service server
-ii  gpgconf                              2.2.12-1                                       amd64        GNU privacy guard - core configuration utilities
-ii  gpgsm                                2.2.12-1                                       amd64        GNU privacy guard - S/MIME version
-ii  gpgv                                 2.2.12-1                                       amd64        GNU privacy guard - signature verification tool
-ii  grep                                 3.3-1                                          amd64        GNU grep, egrep and fgrep
-ii  grub-common                          2.02+dfsg1-20                                  amd64        GRand Unified Bootloader (common files)
-ii  grub-pc                              2.02+dfsg1-20                                  amd64        GRand Unified Bootloader, version 2 (PC/BIOS version)
-ii  grub-pc-bin                          2.02+dfsg1-20                                  amd64        GRand Unified Bootloader, version 2 (PC/BIOS modules)
-ii  grub2-common                         2.02+dfsg1-20                                  amd64        GRand Unified Bootloader (common files for version 2)
-ii  gsettings-desktop-schemas            3.28.1-1                                       all          GSettings desktop-wide schemas
-ii  gsettings-desktop-schemas-dev:amd64  3.28.1-1                                       amd64        Development files for GSettings desktop-wide schemas
-ii  gstreamer1.0-clutter-3.0:amd64       3.0.26-2                                       amd64        Clutter PLugin for GStreamer 1.0
-ii  gstreamer1.0-plugins-bad:amd64       1.14.4-1+b1                                    amd64        GStreamer plugins from the "bad" set
-ii  gstreamer1.0-plugins-base:amd64      1.14.4-2                                       amd64        GStreamer plugins from the "base" set
-ii  gstreamer1.0-plugins-good:amd64      1.14.4-1                                       amd64        GStreamer plugins from the "good" set
-ii  gstreamer1.0-x:amd64                 1.14.4-2                                       amd64        GStreamer plugins for X11 and Pango
-ii  gtk-update-icon-cache                3.24.8+52246+git23fb8e495d-1pureos0            amd64        icon theme caching utility
-ii  gzip                                 1.9-3                                          amd64        GNU compression utilities
-ii  haegtesse                            0.0.2~24.gbp74b46e                             amd64        A daemon to transfer audio data betwem a modem and PulseAudio
-ii  hicolor-icon-theme                   0.17-2                                         all          default fallback theme for FreeDesktop.org icon themes
-ii  hoichess                             0.22.0-1                                       amd64        xboard compatible chess engine to play chess with
-ii  hostname                             3.21                                           amd64        utility to set/show the host name or domain name
-ii  i2c-tools                            4.1-1                                          amd64        heterogeneous set of I2C tools for Linux
-ii  icu-devtools                         63.1-6                                         amd64        Development utilities for International Components for Unicode
-ii  ifupdown                             0.8.35                                         amd64        high level tools to configure network interfaces
+gcc8
+gcr
+gdb
+geoclue2
+gettext
+git
+gnome3.gjs
+gnome3.glib-networking
+gnome3.gnome-backgrounds
+gnome3.gnome-calendar
+gnome3.gnome-chess
+gnome3.gnome-contacts
+gnome3.gnome-control-center
+gnome3.gnome-desktop
+gnome3.gnome-keyring
+gnome3.gnome-maps
+gnome3.gnome-online-accounts
+gnome3.gnome-session
+gnome3.gnome-settings-daemon
+gnome3.gnome-shell
+gnome3.gnome-terminal
+gnome-themes-extra
+gnome3.gnome-tweaks
+gnupg
+gnugrep
+grub2
+gnome3.gsettings-desktop-schemas
+clutter-gst
+gst_all_1.gst-plugins-bad
+gst_all_1.gst-plugins-base
+gst_all_1.gst-plugins-good
+gst_all_1.gstreamer
+gzip
+hicolor-icon-theme
+hostname
+i2c-tools
+icu63
 ii  init                                 1.56+nmu1                                      amd64        metapackage ensuring an init system is installed
 ii  init-system-helpers                  1.56+nmu1                                      all          helper tools for all init systems
 ii  initramfs-tools                      0.133                                          all          generic modular initramfs generator (automation)

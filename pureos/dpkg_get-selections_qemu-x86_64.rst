@@ -1,3 +1,6 @@
+Direct output from `dpkg --get-selection` on the Qemu x86_64 image:
+
+
 accountsservice					install
 acl						install
 acpid						install

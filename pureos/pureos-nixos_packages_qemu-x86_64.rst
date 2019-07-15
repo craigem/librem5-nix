@@ -234,17 +234,16 @@ iptables
 iputils
 dhcp
 iso-codes
-ii  kbd                                  2.0.4-4                                        amd64        Linux console font and keytable utilities
-ii  klibc-utils                          2.0.6-1                                        amd64        small utilities built with klibc for early boot
-ii  kmod                                 26-1                                           amd64        tools for managing Linux kernel modules
-ii  kmscube                              0.0.0~git20170617-2                            amd64        Example KMS/GBM/EGL application
-ii  less                                 487-0.1+b1                                     amd64        pager program similar to more
-ii  libaa1:amd64                         1.4p5-46                                       amd64        ASCII art library
-ii  libaccountsservice0:amd64            0.6.45-2                                       amd64        query and manipulate user account information - shared libraries
-ii  libacl1:amd64                        2.2.53-4                                       amd64        access control list - shared library
-ii  libaio1:amd64                        0.3.112-3                                      amd64        Linux kernel AIO access library - shared library
-ii  libaom0:amd64                        1.0.0-3                                        amd64        AV1 Video Codec Library
-ii  libapparmor1:amd64                   2.13.2-10                                      amd64        changehat AppArmor library
+kbd
+klibc-utils
+kmod
+kmscube
+less
+aalib
+acl
+libaio
+libaom
+libapparmor
 ii  libappstream-glib8:amd64             0.7.14-1                                       amd64        GNOME library to access AppStream services
 ii  libapt-inst2.0:amd64                 1.8.2                                          amd64        deb package format runtime library
 ii  libapt-pkg5.0:amd64                  1.8.2                                          amd64        package management runtime library

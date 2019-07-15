@@ -116,6 +116,10 @@ gpgv
 grub-pc
 grub-pc-bin
 grub2-common
+init
+init-system-helpers
+initramfs-tools
+initramfs-tools-core
 
 Missing:
 --------
@@ -225,16 +229,11 @@ hicolor-icon-theme
 hostname
 i2c-tools
 icu63
-ii  init                                 1.56+nmu1                                      amd64        metapackage ensuring an init system is installed
-ii  init-system-helpers                  1.56+nmu1                                      all          helper tools for all init systems
-ii  initramfs-tools                      0.133                                          all          generic modular initramfs generator (automation)
-ii  initramfs-tools-core                 0.133                                          all          generic modular initramfs generator (core tools)
-ii  iproute2                             4.20.0-2                                       amd64        networking and traffic control tools
-ii  iptables                             1.8.2-4                                        amd64        administration tools for packet filtering and NAT
-ii  iputils-ping                         3:20180629-2                                   amd64        Tools to test the reachability of network hosts
-ii  isc-dhcp-client                      4.4.1-2                                        amd64        DHCP client for automatically obtaining an IP address
-ii  isc-dhcp-common                      4.4.1-2                                        amd64        common manpages relevant to all of the isc-dhcp packages
-ii  iso-codes                            4.2-1                                          all          ISO language, territory, currency, script codes and their translations
+iproute
+iptables
+iputils
+dhcp
+iso-codes
 ii  kbd                                  2.0.4-4                                        amd64        Linux console font and keytable utilities
 ii  klibc-utils                          2.0.6-1                                        amd64        small utilities built with klibc for early boot
 ii  kmod                                 26-1                                           amd64        tools for managing Linux kernel modules

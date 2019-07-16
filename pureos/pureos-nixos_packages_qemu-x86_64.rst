@@ -31,6 +31,8 @@ dpkg-dev
 gen-sshd-host-keys
 genisoimage
 ifupdown
+libapt-inst2.0
+libapt-pkg5.0
 
 No Direct Equivalent:
 ---------------------
@@ -120,6 +122,25 @@ init
 init-system-helpers
 initramfs-tools
 initramfs-tools-core
+libatk-bridge2.0-dev
+libatk1.0-data
+libatk1.0-dev
+libatspi2.0-dev
+libavahi-glib1 - need to check avahi package supports this.
+libavcodec58 - Pretty sure this is covered in ffmpeg-full
+libavresample4 - Pretty sure this is covered in ffmpeg-full
+libavutil56 - Pretty sure this is covered in ffmpeg-full
+libbinutils  2.31.1-16 - Pretty sure this is covered in binutils
+libblkid-dev  2.33.1-0.1 - Pretty sure this is covered by utillinux
+libblkid1  2.33.1-0.1 - Pretty sure this is covered by utillinux
+libbluetooth3  5.50-1 - Pretty sure this is covered by bluezFull
+libboost-atomic1.67.0  1.67.0-13 - Provided by boost
+libboost-chrono1.67.0  1.67.0-13 - Provided by boost
+libboost-date-time1.67.0  1.67.0-13 - Provided by boost
+libboost-filesystem1.67.0  1.67.0-13 - Provided by boost
+libboost-system1.67.0  1.67.0-13 - Provided by boost
+libboost-thread1.67.0  1.67.0-13  - Provided by boost
+
 
 Missing:
 --------
@@ -135,6 +156,11 @@ fonts-quicksand
 gtk-update-icon-cache
 haegtesse
 hoichess
+libasan5  8.3.0-6  AddressSanitizer -- a fast memory error detector
+libatomic1 8.3.0-6 Part of GCC, need to find how this is supported in NixOS.
+libayatana-appindicator3-1  0.5.3-4  Ayatana Application Indicators (GTK-3+ version)
+libayatana-ido3-0.4-0:  0.4.4-1  Widgets and other objects used for Ayatana Indicators
+libayatana-indicator3-7  0.6.2-3  panel indicator applet - shared library (GTK-3+ variant)
 
 Dev Packages:
 -------------
@@ -156,7 +182,7 @@ aspellDicts.en
 bash_5
 bash-completion
 binutils
-bluezFull
+bluezFull       5.50
 bubblewrap
 bzip2
 cacert
@@ -244,54 +270,26 @@ acl
 libaio
 libaom
 libapparmor
-ii  libappstream-glib8:amd64             0.7.14-1                                       amd64        GNOME library to access AppStream services
-ii  libapt-inst2.0:amd64                 1.8.2                                          amd64        deb package format runtime library
-ii  libapt-pkg5.0:amd64                  1.8.2                                          amd64        package management runtime library
-ii  libarchive13:amd64                   3.3.3-4                                        amd64        Multi-format archive and compression library (shared library)
-ii  libargon2-1:amd64                    0~20171227-0.2                                 amd64        memory-hard hashing function - runtime library
-ii  libasan5:amd64                       8.3.0-6                                        amd64        AddressSanitizer -- a fast memory error detector
-ii  libasound2:amd64                     1.1.8-1                                        amd64        shared library for ALSA applications
-ii  libasound2-data                      1.1.8-1                                        all          Configuration files and profiles for ALSA drivers
-ii  libasound2-plugins:amd64             1.1.8-1                                        amd64        ALSA library additional plugins
-ii  libaspell15:amd64                    0.60.7~20110707-6                              amd64        GNU Aspell spell-checker runtime library
-ii  libass9:amd64                        1:0.14.0-2                                     amd64        library for SSA/ASS subtitles rendering
-ii  libassuan0:amd64                     2.5.2-1                                        amd64        IPC library for the GnuPG components
-ii  libasyncns0:amd64                    0.8-6                                          amd64        Asynchronous name service query library
-ii  libatk-bridge2.0-0:amd64             2.30.0-5                                       amd64        AT-SPI 2 toolkit bridge - shared library
-ii  libatk-bridge2.0-dev:amd64           2.30.0-5                                       amd64        Development files for the AT-SPI 2 toolkit bridge
-ii  libatk1.0-0:amd64                    2.30.0-2                                       amd64        ATK accessibility toolkit
-ii  libatk1.0-data                       2.30.0-2                                       all          Common files for the ATK accessibility toolkit
-ii  libatk1.0-dev:amd64                  2.30.0-2                                       amd64        Development files for the ATK accessibility toolkit
-ii  libatomic1:amd64                     8.3.0-6                                        amd64        support library providing __atomic built-in functions
-ii  libatspi2.0-0:amd64                  2.30.0-7                                       amd64        Assistive Technology Service Provider Interface - shared library
-ii  libatspi2.0-dev:amd64                2.30.0-7                                       amd64        Development files for the assistive technology service provider
-ii  libattr1:amd64                       1:2.4.48-4                                     amd64        extended attribute handling - shared library
-ii  libaudit-common                      1:2.8.4-3                                      all          Dynamic library for security auditing - common files
-ii  libaudit1:amd64                      1:2.8.4-3                                      amd64        Dynamic library for security auditing
-ii  libavahi-client3:amd64               0.7-4+b1                                       amd64        Avahi client library
-ii  libavahi-common-data:amd64           0.7-4+b1                                       amd64        Avahi common data files
-ii  libavahi-common3:amd64               0.7-4+b1                                       amd64        Avahi common library
-ii  libavahi-glib1:amd64                 0.7-4+b1                                       amd64        Avahi GLib integration library
-ii  libavc1394-0:amd64                   0.5.4-5                                        amd64        control IEEE 1394 audio/video devices
-ii  libavcodec58:amd64                   7:4.1.3-1                                      amd64        FFmpeg library with de/encoders for audio/video codecs - runtime files
-ii  libavresample4:amd64                 7:4.1.3-1                                      amd64        FFmpeg compatibility library for resampling - runtime files
-ii  libavutil56:amd64                    7:4.1.3-1                                      amd64        FFmpeg library with functions for simplifying programming - runtime files
-ii  libayatana-appindicator3-1           0.5.3-4                                        amd64        Ayatana Application Indicators (GTK-3+ version)
-ii  libayatana-ido3-0.4-0:amd64          0.4.4-1                                        amd64        Widgets and other objects used for Ayatana Indicators
-ii  libayatana-indicator3-7:amd64        0.6.2-3                                        amd64        panel indicator applet - shared library (GTK-3+ variant)
-ii  libbabeltrace1:amd64                 1.5.6-2                                        amd64        Babeltrace conversion libraries
-ii  libbinutils:amd64                    2.31.1-16                                      amd64        GNU binary utilities (private shared library)
-ii  libblkid-dev:amd64                   2.33.1-0.1                                     amd64        block device ID library - headers and static libraries
-ii  libblkid1:amd64                      2.33.1-0.1                                     amd64        block device ID library
-ii  libbluetooth3:amd64                  5.50-1                                         amd64        Library to use the BlueZ Linux Bluetooth stack
-ii  libboost-atomic1.67.0:amd64          1.67.0-13                                      amd64        atomic data types, operations, and memory ordering constraints
-ii  libboost-chrono1.67.0:amd64          1.67.0-13                                      amd64        C++ representation of time duration, time point, and clocks
-ii  libboost-date-time1.67.0:amd64       1.67.0-13                                      amd64        set of date-time libraries based on generic programming concepts
-ii  libboost-filesystem1.67.0:amd64      1.67.0-13                                      amd64        filesystem operations (portable paths, iteration over directories, etc) in C++
-ii  libboost-system1.67.0:amd64          1.67.0-13                                      amd64        Operating system (e.g. diagnostics support) library
-ii  libboost-thread1.67.0:amd64          1.67.0-13                                      amd64        portable C++ multi-threading
-ii  libbrotli1:amd64                     1.0.7-2                                        amd64        library implementing brotli encoder and decoder (shared libraries)
-ii  libbs2b0:amd64                       3.1.0+dfsg-2.2                                 amd64        Bauer stereophonic-to-binaural DSP library
+appstream-glib
+libarchive
+libargon2
+alsaLib         1.1.8
+alsaPlugins     1.1.6    > 1.1.8
+aspell          0.60.6.1 > 0.60.7~20110707+
+libass          0.14.0
+libassuan       2.5.2
+libasyncns      0.8
+at-spi2-atk     2.30.0
+atk             2.30.0
+attr            2.4.48
+audit           2.8.4
+avahi           0.7
+ffmpeg-full     4.1.3
+babeltrace1     1.5.6
+utillinux       2.33.1
+boost           1.67_0
+brotli          1.0.7
+libbs2b0        3.1.0
 ii  libbsd0:amd64                        0.9.1-2                                        amd64        utility functions from BSD systems - shared library
 ii  libbz2-1.0:amd64                     1.0.6-9.1                                      amd64        high-quality block-sorting file compressor library - runtime
 ii  libc-bin                             2.28-10                                        amd64        GNU C Library: Binaries

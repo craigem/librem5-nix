@@ -136,10 +136,35 @@ libblkid1  2.33.1-0.1 - Pretty sure this is covered by utillinux
 libbluetooth3  5.50-1 - Pretty sure this is covered by bluezFull
 libboost-atomic1.67.0  1.67.0-13 - Provided by boost
 libboost-chrono1.67.0  1.67.0-13 - Provided by boost
-libboost-date-time1.67.0  1.67.0-13 - Provided by boost
-libboost-filesystem1.67.0  1.67.0-13 - Provided by boost
-libboost-system1.67.0  1.67.0-13 - Provided by boost
-libboost-thread1.67.0  1.67.0-13  - Provided by boost
+libboost-date-time1.67.0      1.67.0-13  - Provided by boost
+libboost-filesystem1.67.0     1.67.0-13  - Provided by boost
+libboost-system1.67.0         1.67.0-13  - Provided by boost
+libboost-thread1.67.0         1.67.0-13  - Provided by boost
+libc-dev-bin                  2.28-10    - Provided by glibc
+libc-l10n                     2.28-10    - Provided by glibc
+libc6                         2.28-10    - Provided by glibc
+libc6-dev                     2.28-10    - Provided by glibc
+libcairo-gobject2             1.16.0-4   - Provided by cairo
+libcairo-script-interpreter2  1.16.0-4   - Provided by cairo
+libcairo2                     1.16.0-4   - Provided by cairo
+libcairo2-dev                 1.16.0-4   - Provided by cairo.dev
+libcamel-1.2-62               3.30.5-1   - Provided by evolution-data-server
+libcanberra-pulse             0.30-7     - Provided by libcanberra_gtk3
+libcanberra0                  0.30-7     - Provided by libcanberra_gtk3
+libcap2                       1:2.25-2   - Provided by libcap.lib
+libcap2-bin                   1:2.25-2   - Provided by libcap
+libcc1-0                      8.3.0-6    - Pretty sure this is provided by gcc-arm-embedded
+libchamplain-gtk-0.12-0       0.12.16-3  - Provided by libchamplain
+libcheese-gtk25               3.31.90-1  - Provided by gnome3.cheese
+libcheese8                    3.31.90-1  - Provided by gnome3.cheese
+libclutter-gst-3.0-0          3.0.26-2   - Provided by clutter-gst
+libcogl-pango20               1.22.2-6   - Provided by cogl
+libcogl-path20                1.22.2-6   - Provided by cogl
+libcogl20                     1.22.2-6   - Provided by cogl
+libcolord2                    1.4.3-4    - Provided by colord
+libcolorhug2                  1.4.3-4    - Provided by colord
+libcom-err2                   1.44.5-1   - Provided by e2fsprogs
+libcups2                      2.2.10-6   - Provided by cups.lib
 
 
 Missing:
@@ -156,16 +181,29 @@ fonts-quicksand
 gtk-update-icon-cache
 haegtesse
 hoichess
-libasan5  8.3.0-6  AddressSanitizer -- a fast memory error detector
-libatomic1 8.3.0-6 Part of GCC, need to find how this is supported in NixOS.
+libasan5                    8.3.0-6  AddressSanitizer -- a fast memory error detector
+libatomic1                  8.3.0-6  Part of GCC, need to find how this is supported in NixOS.
 libayatana-appindicator3-1  0.5.3-4  Ayatana Application Indicators (GTK-3+ version)
-libayatana-ido3-0.4-0:  0.4.4-1  Widgets and other objects used for Ayatana Indicators
-libayatana-indicator3-7  0.6.2-3  panel indicator applet - shared library (GTK-3+ variant)
+libayatana-ido3-0.4-0       0.4.4-1  Widgets and other objects used for Ayatana Indicators
+libayatana-indicator3-7     0.6.2-3  panel indicator applet - shared library (GTK-3+ variant)
+libcrystalhd3               1:0.0~git20110715.fdd2f19-13  Crystal HD Video Decoder (shared library)
 
 Dev Packages:
 -------------
 
 gsettings-desktop-schemas-dev:amd64  3.28.1-1
+
+
+Needs Upgrading:
+----------------
+alsaPlugins       1.1.6     > 1.1.8
+aspell            0.60.6.1  > 0.60.7~20110707+
+glibc             2.27      > 2.28
+gnome3.cheese     3.30.0    > 3.31.90
+chromaprint       1.3.2     > 1.4.3
+codec2            0.8.0     > 0.8.1
+colord            1.4.2     > 1.4.3
+cryptsetup        2.0.6     > 2.1.0
 
 
 OK:
@@ -273,66 +311,40 @@ libapparmor
 appstream-glib
 libarchive
 libargon2
-alsaLib         1.1.8
-alsaPlugins     1.1.6    > 1.1.8
-aspell          0.60.6.1 > 0.60.7~20110707+
-libass          0.14.0
-libassuan       2.5.2
-libasyncns      0.8
-at-spi2-atk     2.30.0
-atk             2.30.0
-attr            2.4.48
-audit           2.8.4
-avahi           0.7
-ffmpeg-full     4.1.3
-babeltrace1     1.5.6
-utillinux       2.33.1
-boost           1.67_0
-brotli          1.0.7
-libbs2b0        3.1.0
-ii  libbsd0:amd64                        0.9.1-2                                        amd64        utility functions from BSD systems - shared library
-ii  libbz2-1.0:amd64                     1.0.6-9.1                                      amd64        high-quality block-sorting file compressor library - runtime
-ii  libc-bin                             2.28-10                                        amd64        GNU C Library: Binaries
-ii  libc-dev-bin                         2.28-10                                        amd64        GNU C Library: Development binaries
-ii  libc-l10n                            2.28-10                                        all          GNU C Library: localization files
-ii  libc6:amd64                          2.28-10                                        amd64        GNU C Library: Shared libraries
-ii  libc6-dev:amd64                      2.28-10                                        amd64        GNU C Library: Development Libraries and Header Files
-ii  libcaca0:amd64                       0.99.beta19-2.1                                amd64        colour ASCII art library
-ii  libcairo-gobject2:amd64              1.16.0-4                                       amd64        Cairo 2D vector graphics library (GObject library)
-ii  libcairo-script-interpreter2:amd64   1.16.0-4                                       amd64        Cairo 2D vector graphics library (script interpreter)
-ii  libcairo2:amd64                      1.16.0-4                                       amd64        Cairo 2D vector graphics library
-ii  libcairo2-dev:amd64                  1.16.0-4                                       amd64        Development files for the Cairo 2D graphics library
-ii  libcamel-1.2-62:amd64                3.30.5-1                                       amd64        Evolution MIME message handling library
-ii  libcanberra-gtk3-0:amd64             0.30-7                                         amd64        GTK+ 3.0 helper for playing widget event sounds with libcanberra
-ii  libcanberra-pulse:amd64              0.30-7                                         amd64        PulseAudio backend for libcanberra
-ii  libcanberra0:amd64                   0.30-7                                         amd64        simple abstract interface for playing event sounds
-ii  libcap-dev:amd64                     1:2.25-2                                       amd64        POSIX 1003.1e capabilities (development)
-ii  libcap-ng0:amd64                     0.7.9-2                                        amd64        An alternate POSIX capabilities library
-ii  libcap2:amd64                        1:2.25-2                                       amd64        POSIX 1003.1e capabilities (library)
-ii  libcap2-bin                          1:2.25-2                                       amd64        POSIX 1003.1e capabilities (utilities)
-ii  libcc1-0:amd64                       8.3.0-6                                        amd64        GCC cc1 plugin for GDB
-ii  libcdparanoia0:amd64                 3.10.2+debian-13                               amd64        audio extraction tool for sampling CDs (library)
-ii  libchamplain-0.12-0:amd64            0.12.16-3                                      amd64        C library providing ClutterActor to display maps
-ii  libchamplain-gtk-0.12-0:amd64        0.12.16-3                                      amd64        Gtk+ widget to display maps
-ii  libcheese-gtk25:amd64                3.31.90-1                                      amd64        tool to take pictures and videos from your webcam - widgets
-ii  libcheese8:amd64                     3.31.90-1                                      amd64        tool to take pictures and videos from your webcam - base library
-ii  libchromaprint1:amd64                1.4.3-3                                        amd64        audio fingerprint library
-ii  libclutter-1.0-0:amd64               1.26.2+dfsg-10                                 amd64        Open GL based interactive canvas library
-ii  libclutter-gst-3.0-0:amd64           3.0.26-2                                       amd64        Open GL based interactive canvas library GStreamer elements
-ii  libclutter-gtk-1.0-0:amd64           1.8.4-4                                        amd64        Open GL based interactive canvas library GTK+ widget
-ii  libcodec2-0.8.1:amd64                0.8.1-2                                        amd64        Codec2 runtime library
-ii  libcogl-pango20:amd64                1.22.2-6                                       amd64        Object oriented GL/GLES Abstraction/Utility Layer
-ii  libcogl-path20:amd64                 1.22.2-6                                       amd64        Object oriented GL/GLES Abstraction/Utility Layer
-ii  libcogl20:amd64                      1.22.2-6                                       amd64        Object oriented GL/GLES Abstraction/Utility Layer
-ii  libcolord-gtk1:amd64                 0.1.26-2                                       amd64        GTK+ convenience library for interacting with colord
-ii  libcolord2:amd64                     1.4.3-4                                        amd64        system service to manage device colour profiles -- runtime
-ii  libcolorhug2:amd64                   1.4.3-4                                        amd64        library to access the ColorHug colourimeter -- runtime
-ii  libcom-err2:amd64                    1.44.5-1                                       amd64        common error description library
-ii  libcrack2:amd64                      2.9.6-2                                        amd64        pro-active password checker library
-ii  libcroco3:amd64                      0.6.12-3                                       amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
-ii  libcryptsetup12:amd64                2:2.1.0-5                                      amd64        disk encryption support - shared library
-ii  libcrystalhd3:amd64                  1:0.0~git20110715.fdd2f19-13                   amd64        Crystal HD Video Decoder (shared library)
-ii  libcups2:amd64                       2.2.10-6                                       amd64        Common UNIX Printing System(tm) - Core library
+alsaLib           1.1.8
+libass            0.14.0
+libassuan         2.5.2
+libasyncns        0.8
+at-spi2-atk       2.30.0
+atk               2.30.0
+attr              2.4.48
+audit             2.8.4
+avahi             0.7
+ffmpeg-full       4.1.3
+babeltrace1       1.5.6
+utillinux         2.33.1
+boost             1.67_0
+brotli            1.0.7
+libbs2b0          3.1.0
+libbsd0           0.9.1
+bzip2             1.0.6
+libcaca           0.99.19
+cairo             1.16.0
+libcanberra_gtk3  0.30
+libcap.lib        2.26
+libcap_ng         0.7.9
+libcap            2.26
+gcc-arm-embedded  8-2018-q4
+cdparanoia        3.10.2
+libchamplain      0.12.16
+clutter           1.26.2
+clutter_gtk       1.8.4
+cogl              1.22.2
+colord-gtk        0.1.26
+e2fsprog          1.44.5
+cracklib          2.9.6
+gnome3.libcroco   0.6.12
+cups              2.2.10
 ii  libcupsimage2:amd64                  2.2.10-6                                       amd64        Common UNIX Printing System(tm) - Raster image library
 ii  libcurl3-gnutls:amd64                7.64.0-4                                       amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
 ii  libdatrie1:amd64                     0.2.12-2                                       amd64        Double-array trie library

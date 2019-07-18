@@ -6,9 +6,8 @@ packaging and building.
 Once initially sifted, issues will be raised to manage what ever work results
 from this.
 
+Comparison has been made using `nix-locate` on NixOS and `apt-file` on PureOS.
 
-Problems:
-=========
 
 Debian Specific:
 ----------------
@@ -19,7 +18,7 @@ apt-utils
 base-files
 base-passwd
 build-essential
-dconf-gsettings-backend:amd64
+dconf-gsettings-backend
 dconf-service
 debconf
 debconf-i18n
@@ -33,9 +32,15 @@ genisoimage
 ifupdown
 libapt-inst2.0
 libapt-pkg5.0
+libdebconfclient0       0.249
+libdpkg-perl            1.19.7         Dpkg perl modules
+libegl1-mesa            18.3.6-2pureos+librem5.3~118051.gbp615480   transitional dummy package
+
 
 No Direct Equivalent:
 ---------------------
+
+libdevmapper-event1.02.1  2:1.02.155-3
 
 binutils-common:amd64
 binutils-x86-64-linux-gnu
@@ -44,8 +49,6 @@ bsdutils
 colord-data
 cpp
 cpp-8
-dbus-user-session
-dbus-x11
 dictionaries-common
 emacsen-common
 epiphany-browser-data
@@ -165,45 +168,61 @@ libcolord2                    1.4.3-4    - Provided by colord
 libcolorhug2                  1.4.3-4    - Provided by colord
 libcom-err2                   1.44.5-1   - Provided by e2fsprogs
 libcups2                      2.2.10-6   - Provided by cups.lib
+libcupsimage2                 2.2.10-6   - Provided by cups.lib
+libcurl3-gnutls               7.64.0-4   - Possibly provided by gnutls
 
 
 Missing:
 --------
-calls
-chatty
-cloud-guest-utils
-cloud-image-utils
-cloud-initramfs-growroot
-dmeventd
-dmsetup
-fbset: available via busybox
-fonts-quicksand
-gtk-update-icon-cache
-haegtesse
-hoichess
-libasan5                    8.3.0-6  AddressSanitizer -- a fast memory error detector
-libatomic1                  8.3.0-6  Part of GCC, need to find how this is supported in NixOS.
-libayatana-appindicator3-1  0.5.3-4  Ayatana Application Indicators (GTK-3+ version)
-libayatana-ido3-0.4-0       0.4.4-1  Widgets and other objects used for Ayatana Indicators
-libayatana-indicator3-7     0.6.2-3  panel indicator applet - shared library (GTK-3+ variant)
-libcrystalhd3               1:0.0~git20110715.fdd2f19-13  Crystal HD Video Decoder (shared library)
+calls                        0.0.1~184.gbp2f82dc   Make and receive PSTN phone calls
+chatty                       0.0.8~441.gbpc6d93c   XMPP and SMS messaging
+cloud-initramfs-growroot     0.18.debian7          automatically resize the root partition on first boot
+dmeventd                     2:1.02.155-3          Linux Kernel Device Mapper event daemon
+fbset                        2.1-30                framebuffer device maintenance program
+fonts-quicksand              0.2016-2              sans-serif font with round attributes
+haegtesse                    0.0.2~24.gbp74b46e    A daemon to transfer audio data betwem a modem and PulseAudio
+hoichess                     0.22.0-1              xboard compatible chess engine to play chess with
+libayatana-appindicator3-1   0.5.3-4               Ayatana Application Indicators (GTK-3+ version)
+libayatana-ido3-0.4-0        0.4.4-1               Widgets and other objects used for Ayatana Indicators
+libayatana-indicator3-7      0.6.2-3               panel indicator applet - shared library (GTK-3+ variant)
+libcrystalhd3                1:0.0~git20110715.fdd2f19-13  Crystal HD Video Decoder (shared library)
+libdatrie1                   0.2.12-2  Double-array trie library
+libdca0                      0.0.6-1   decoding library for DTS Coherent Acoustics streams
+libdns-export1104            1:9.11.5.P4+dfsg-5.1  Exported DNS Shared Library
 
-Dev Packages:
--------------
 
-gsettings-desktop-schemas-dev:amd64  3.28.1-1
+NixOS Package      Version             PureOS Package      Version
+==================================================================
 
+Problems:
+=========
 
 Needs Upgrading:
 ----------------
-alsaPlugins       1.1.6     > 1.1.8
-aspell            0.60.6.1  > 0.60.7~20110707+
-glibc             2.27      > 2.28
-gnome3.cheese     3.30.0    > 3.31.90
-chromaprint       1.3.2     > 1.4.3
-codec2            0.8.0     > 0.8.1
-colord            1.4.2     > 1.4.3
-cryptsetup        2.0.6     > 2.1.0
+alsaPlugins        1.1.6               alsa-utils          1.1.8-2
+aspell             0.60.6.1            aspell              0.60.7~20110707+
+glibc              2.27      > 2.28
+gnome3.cheese      3.30.0    > 3.31.90
+chromaprint        1.3.2     > 1.4.3
+codec2             0.8.0     > 0.8.1
+colord             1.4.2     > 1.4.3
+cryptsetup         2.0.6     > 2.1.0
+dbus_libs          1.12.12             dbus                1.12.16-1
+dbus_libs          1.12.12             dbus-user-session   1.12.16-1
+dbus_libs.lib      1.12.12             dbus-x11            1.12.16-1
+dbus_libs.dev      1.12.12   > 1.12.16
+devicemapper       2.03.01             dmsetup             2:1.02.155-3
+devicemapper       2.03.01             lvm2                2.03.02-3
+devicemapper       2.03.01             libdevmapper1.02.1  2:1.02.155-3
+djvulibre          3.5.27              libdjvulibre-text   3.5.27.1-10
+djvulibre          3.5.27              libdjvulibre21      3.5.27.1-10
+gnome3.gtk         3.24.5              gtk-update-icon-cache   3.24.8+52246+git23fb8e495d-1pureos0
+libdvdread         6.0.0               libdvdread4         6.0.1-1
+libedit            20180525-3.1        libedit2            3.1-20181209-1
+libGLdriver.drivers  18.3.4            libegl-mesa0        18.3.6-2pureos+librem5.3~118051.gbp615480
+libglvnd           1.0.0               libegl1             1.1.0-1
+libGL_driver.dev   18.3.4              libegl1-mesa-dev    18.3.6-2pureos+librem5.3~118051.gbp615480
+
 
 
 OK:
@@ -215,8 +234,7 @@ acpid
 adwaita-icon-theme
 alsa-utils
 apg
-aspell
-aspellDicts.en
+aspellDicts.en     2018.04.16-0        aspell-en           2018.04.16-0-1
 bash_5
 bash-completion
 binutils
@@ -225,13 +243,13 @@ bubblewrap
 bzip2
 cacert
 cheese-common
-cloud-utils
+cloud-utils        0.30                cloud-guest-utils   0.29
+cloud-utils        0.30                cloud-image-utils   0.29
 colord
 coreutils
 cpio
 cron
 dash
-dbus
 gnome3.dconf-editor
 desktop-file-utils
 dtc
@@ -284,6 +302,7 @@ gnugrep
 grub2
 gnome3.gsettings-desktop-schemas
 clutter-gst
+gsettings_desktop_schemas  3.28.1      gsettings-desktop-schemas-dev  3.28.1-1
 gst_all_1.gst-plugins-bad
 gst_all_1.gst-plugins-base
 gst_all_1.gst-plugins-good
@@ -312,9 +331,11 @@ appstream-glib
 libarchive
 libargon2
 alsaLib           1.1.8
+gcc8               8.3.0               libasan5            8.3.0-6
 libass            0.14.0
 libassuan         2.5.2
 libasyncns        0.8
+gcc8               8.3.0               libatomic1          8.3.0-6
 at-spi2-atk       2.30.0
 atk               2.30.0
 attr              2.4.48
@@ -337,61 +358,42 @@ libcap            2.26
 gcc-arm-embedded  8-2018-q4
 cdparanoia        3.10.2
 libchamplain      0.12.16
-clutter           1.26.2
-clutter_gtk       1.8.4
-cogl              1.22.2
-colord-gtk        0.1.26
-e2fsprog          1.44.5
-cracklib          2.9.6
-gnome3.libcroco   0.6.12
-cups              2.2.10
-ii  libcupsimage2:amd64                  2.2.10-6                                       amd64        Common UNIX Printing System(tm) - Raster image library
-ii  libcurl3-gnutls:amd64                7.64.0-4                                       amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
-ii  libdatrie1:amd64                     0.2.12-2                                       amd64        Double-array trie library
-ii  libdazzle-1.0-0:amd64                3.30.2-2                                       amd64        feature-filled library for GTK+ and GObject
-ii  libdb5.3:amd64                       5.3.28+dfsg1-0.5                               amd64        Berkeley v5.3 Database Libraries [runtime]
-ii  libdbus-1-3:amd64                    1.12.16-1                                      amd64        simple interprocess messaging system (library)
-ii  libdbus-1-dev:amd64                  1.12.16-1                                      amd64        simple interprocess messaging system (development headers)
-ii  libdbus-glib-1-2:amd64               0.110-4                                        amd64        deprecated library for D-Bus IPC
-ii  libdbusmenu-glib4:amd64              18.10.20180917~bzr490+repack1-1                amd64        library for passing menus over DBus
-ii  libdbusmenu-gtk3-4:amd64             18.10.20180917~bzr490+repack1-1                amd64        library for passing menus over DBus - GTK-3+ version
-ii  libdc1394-22:amd64                   2.2.5-1                                        amd64        high level programming interface for IEEE 1394 digital cameras
-ii  libdca0:amd64                        0.0.6-1                                        amd64        decoding library for DTS Coherent Acoustics streams
-ii  libdconf1:amd64                      0.30.1-2                                       amd64        simple configuration storage system - runtime library
-ii  libde265-0:amd64                     1.0.3-1+b1                                     amd64        Open H.265 video codec implementation
-ii  libdebconfclient0:amd64              0.249                                          amd64        Debian Configuration Management System (C-implementation library)
-ii  libdevmapper-event1.02.1:amd64       2:1.02.155-3                                   amd64        Linux Kernel Device Mapper event support library
-ii  libdevmapper1.02.1:amd64             2:1.02.155-3                                   amd64        Linux Kernel Device Mapper userspace library
-ii  libdjvulibre-text                    3.5.27.1-10                                    all          Linguistic support files for libdjvulibre
-ii  libdjvulibre21:amd64                 3.5.27.1-10                                    amd64        Runtime support for the DjVu image format
-ii  libdns-export1104                    1:9.11.5.P4+dfsg-5.1                           amd64        Exported DNS Shared Library
-ii  libdpkg-perl                         1.19.7                                         all          Dpkg perl modules
-ii  libdrm-amdgpu1:amd64                 2.4.97-1                                       amd64        Userspace interface to amdgpu-specific kernel DRM services -- runtime
-ii  libdrm-common                        2.4.97-1                                       all          Userspace interface to kernel DRM services -- common files
-ii  libdrm-dev:amd64                     2.4.97-1                                       amd64        Userspace interface to kernel DRM services -- development files
-ii  libdrm-intel1:amd64                  2.4.97-1                                       amd64        Userspace interface to intel-specific kernel DRM services -- runtime
-ii  libdrm-nouveau2:amd64                2.4.97-1                                       amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
-ii  libdrm-radeon1:amd64                 2.4.97-1                                       amd64        Userspace interface to radeon-specific kernel DRM services -- runtime
-ii  libdrm2:amd64                        2.4.97-1                                       amd64        Userspace interface to kernel DRM services -- runtime
-ii  libdv4:amd64                         1.0.0-12                                       amd64        software library for DV format digital video (runtime lib)
-ii  libdvdnav4:amd64                     6.0.0-1                                        amd64        DVD navigation library
-ii  libdvdread4:amd64                    6.0.1-1                                        amd64        library for reading DVDs
-ii  libdw1:amd64                         0.176-1.1                                      amd64        library that provides access to the DWARF debug information
-ii  libebackend-1.2-10:amd64             3.30.5-1                                       amd64        Utility library for evolution data servers
-ii  libebook-1.2-19:amd64                3.30.5-1                                       amd64        Client library for evolution address books
-ii  libebook-contacts-1.2-2:amd64        3.30.5-1                                       amd64        Client library for evolution contacts books
-ii  libecal-1.2-19:amd64                 3.30.5-1                                       amd64        Client library for evolution calendars
-ii  libedata-book-1.2-25:amd64           3.30.5-1                                       amd64        Backend library for evolution address books
-ii  libedata-cal-1.2-29:amd64            3.30.5-1                                       amd64        Backend library for evolution calendars
-ii  libedataserver-1.2-23:amd64          3.30.5-1                                       amd64        Utility library for evolution data servers
-ii  libedataserverui-1.2-2:amd64         3.30.5-1                                       amd64        Utility library for evolution data servers
-ii  libedit2:amd64                       3.1-20181209-1                                 amd64        BSD editline and history libraries
-ii  libefiboot1:amd64                    37-2                                           amd64        Library to manage UEFI variables
-ii  libefivar1:amd64                     37-2                                           amd64        Library to manage UEFI variables
-ii  libegl-mesa0:amd64                   18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        free implementation of the EGL API -- Mesa vendor library
-ii  libegl1:amd64                        1.1.0-1                                        amd64        Vendor neutral GL dispatch library -- EGL support
-ii  libegl1-mesa:amd64                   18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        transitional dummy package
-ii  libegl1-mesa-dev:amd64               18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        free implementation of the EGL API -- development files
+clutter            1.26.2
+clutter_gtk        1.8.4
+cogl               1.22.2
+colord-gtk         0.1.26
+e2fsprog           1.44.5
+cracklib           2.9.6
+gnome3.libcroco    0.6.12
+cups.lib           2.2.10
+gnome3.libdazzle   3.30.2
+db                 5.3.28
+dbus-glib          0.110
+libdbusmenu-glib   16.04
+libdbusmenu-gtk3   16.04
+libdc1394-22       2.2.5
+gnome3.dconf.lib   0.30.1              libdconf1           0.30.1-2
+libde265           1.0.3               libde265-0          1.0.3-1+b1
+libdrm             2.4.97              libdrm-amdgpu1      2.4.97-1
+libdrm             2.4.97              libdrm-common       2.4.97-1
+libdrm             2.4.97              libdrm-dev          2.4.97-1
+libdrm             2.4.97              libdrm-intel1       2.4.97-1
+
+libdrm             2.4.97              libdrm-radeon1      2.4.97-1
+libdrm             2.4.97              libdrm2             2.4.97-1
+libdv              1.0.0               libdv4              1.0.0-12
+libdvdnav          6.0.0               libdvdnav4          6.0.0-1
+elfutils           0.176               libdw1              0.176-1.1
+evolution_data_server  3.30.5          libebackend-1.2-10  3.30.5-1
+evolution_data_server  3.30.5          libebook-1.2-19     3.30.5-1
+evolution_data_server  3.30.5          libebook-contacts-1.2-2  3.30.5-1
+evolution_data_server  3.30.5          libecal-1.2-19      3.30.5-1
+evolution_data_server  3.30.5          libedata-book-1.2-25  3.30.5-1
+evolution_data_server  3.30.5          libedata-cal-1.2-29  3.30.5-1
+evolution_data_server  3.30.5          libedataserver-1.2-23  3.30.5-1
+evolution_data_server  3.30.5          libedataserverui-1.2-2  3.30.5-1
+efivar             37                  libefiboot1         37-2
+efivar             37                  libefivar1          37-2
 ii  libelf1:amd64                        0.176-1.1                                      amd64        library to read and write ELF files
 ii  libenchant1c2a:amd64                 1.6.0-11.1+b1                                  amd64        Wrapper library for various spell checker engines (runtime libs)
 ii  libepoxy-dev:amd64                   1.5.3-0.1                                      amd64        OpenGL function pointer management library- development
@@ -948,7 +950,6 @@ ii  lua-expat:amd64                      1.3.0-4                                
 ii  lua-json                             1.3.4-2                                        all          JSON decoder/encoder for Lua
 ii  lua-lpeg:amd64                       1.0.0-2                                        amd64        LPeg library for the Lua language
 ii  lua-socket:amd64                     3.0~rc1+git+ac3201d-4                          amd64        TCP/UDP socket library for the Lua language
-ii  lvm2                                 2.03.02-3                                      amd64        Linux Logical Volume Manager
 ii  make                                 4.2.1-1.2                                      amd64        utility for directing compilation
 ii  mariadb-common                       1:10.3.15-1                                    all          MariaDB common metapackage
 ii  mawk                                 1.3.3-17+b3                                    amd64        a pattern scanning and text processing language

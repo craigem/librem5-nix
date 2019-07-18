@@ -222,7 +222,8 @@ libedit            20180525-3.1        libedit2            3.1-20181209-1
 libGLdriver.drivers  18.3.4            libegl-mesa0        18.3.6-2pureos+librem5.3~118051.gbp615480
 libglvnd           1.0.0               libegl1             1.1.0-1
 libGL_driver.dev   18.3.4              libegl1-mesa-dev    18.3.6-2pureos+librem5.3~118051.gbp615480
-
+fontconfig.lib     2.12.6              libfontconfig1      2.13.1-2
+fontconfig.dev     2.12.6              libfontconfig1-dev  2.13.1-2
 
 
 OK:
@@ -378,7 +379,6 @@ libdrm             2.4.97              libdrm-amdgpu1      2.4.97-1
 libdrm             2.4.97              libdrm-common       2.4.97-1
 libdrm             2.4.97              libdrm-dev          2.4.97-1
 libdrm             2.4.97              libdrm-intel1       2.4.97-1
-
 libdrm             2.4.97              libdrm-radeon1      2.4.97-1
 libdrm             2.4.97              libdrm2             2.4.97-1
 libdv              1.0.0               libdv4              1.0.0-12
@@ -394,41 +394,39 @@ evolution_data_server  3.30.5          libedataserver-1.2-23  3.30.5-1
 evolution_data_server  3.30.5          libedataserverui-1.2-2  3.30.5-1
 efivar             37                  libefiboot1         37-2
 efivar             37                  libefivar1          37-2
-ii  libelf1:amd64                        0.176-1.1                                      amd64        library to read and write ELF files
-ii  libenchant1c2a:amd64                 1.6.0-11.1+b1                                  amd64        Wrapper library for various spell checker engines (runtime libs)
-ii  libepoxy-dev:amd64                   1.5.3-0.1                                      amd64        OpenGL function pointer management library- development
-ii  libepoxy0:amd64                      1.5.3-0.1                                      amd64        OpenGL function pointer management library
-ii  liberror-perl                        0.17027-2                                      all          Perl module for error/exception handling in an OO-ish way
-ii  libestr0:amd64                       0.1.10-2.1                                     amd64        Helper functions for handling strings (lib)
-ii  libevdev-dev:amd64                   1.6.0+dfsg-1                                   amd64        wrapper library for evdev devices - development files
-ii  libevdev2:amd64                      1.6.0+dfsg-1                                   amd64        wrapper library for evdev devices
-ii  libevdocument3-4:amd64               3.30.2-3                                       amd64        Document (PostScript, PDF) rendering library
-ii  libevview3-3:amd64                   3.30.2-3                                       amd64        Document (PostScript, PDF) rendering library - Gtk+ widgets
-ii  libexif12:amd64                      0.6.21-5.1                                     amd64        library to parse EXIF files
-ii  libexpat1:amd64                      2.2.6-2                                        amd64        XML parsing C library - runtime library
-ii  libexpat1-dev:amd64                  2.2.6-2                                        amd64        XML parsing C library - development kit
-ii  libext2fs2:amd64                     1.44.5-1                                       amd64        ext2/ext3/ext4 file system libraries
-ii  libfaad2:amd64                       2.8.8-3                                        amd64        freeware Advanced Audio Decoder - runtime files
-ii  libfarstream-0.2-5:amd64             0.2.8-4.1                                      amd64        Audio/Video communications framework: core library
-ii  libfastjson4:amd64                   0.99.8-2                                       amd64        fast json library for C
-ii  libfdisk1:amd64                      2.33.1-0.1                                     amd64        fdisk partitioning library
-ii  libffi-dev:amd64                     3.2.1-9                                        amd64        Foreign Function Interface library (development files)
-ii  libffi6:amd64                        3.2.1-9                                        amd64        Foreign Function Interface library runtime
-ii  libfftw3-double3:amd64               3.3.8-2                                        amd64        Library for computing Fast Fourier Transforms - Double precision
-ii  libfftw3-single3:amd64               3.3.8-2                                        amd64        Library for computing Fast Fourier Transforms - Single precision
-ii  libflac8:amd64                       1.3.2-3                                        amd64        Free Lossless Audio Codec - runtime C library
-ii  libflite1:amd64                      2.1-release-3                                  amd64        Small run-time speech synthesis engine - shared libraries
-ii  libfluidsynth1:amd64                 1.1.11-1                                       amd64        Real-time MIDI software synthesizer (runtime library)
-ii  libfolks-eds25:amd64                 0.11.4-1+b2                                    amd64        Evolution-data-server backend for libfolks
-ii  libfolks25:amd64                     0.11.4-1+b2                                    amd64        library to aggregates people into metacontacts
-ii  libfontconfig1:amd64                 2.13.1-2                                       amd64        generic font configuration library - runtime
-ii  libfontconfig1-dev:amd64             2.13.1-2                                       amd64        generic font configuration library - development
-ii  libfontenc1:amd64                    1:1.1.3-1+b2                                   amd64        X11 font encoding library
-ii  libfreetype6:amd64                   2.9.1-3                                        amd64        FreeType 2 font engine, shared library files
-ii  libfreetype6-dev:amd64               2.9.1-3                                        amd64        FreeType 2 font engine, development files
-ii  libfribidi-dev:amd64                 1.0.5-3.1                                      amd64        Development files for FreeBidi library
-ii  libfribidi0:amd64                    1.0.5-3.1                                      amd64        Free Implementation of the Unicode BiDi algorithm
-ii  libfuse2:amd64                       2.9.9-1                                        amd64        Filesystem in Userspace (library)
+elfutils           0.176               libelf1             0.176-1.1
+enchant            1.6.1               libenchant1c2a      1.6.0-11.1+b1
+epoxy              1.5.3               libepoxy-dev        1.5.3-0.1
+epoxy              1.5.3               libepoxy0           1.5.3-0.1
+perl528Packages.Error  5.28.1          liberror-perl       0.17027-2
+libestr            0.1.11              libestr0            0.1.10-2.1
+libevdev           1.6.0               libevdev-dev        1.6.0+dfsg-1
+libevdev           1.6.0               libevdev2           1.6.0+dfsg-1
+evince             3.30.2              libevdocument3-4    3.30.2-3
+evince             3.30.2              libevview3-3        3.30.2-3
+libexif            0.6.21              libexif12           0.6.21-5.1
+expat              2.2.6               libexpat1           2.2.6-2
+expat.dev          2.2.6               libexpat1-dev       2.2.6-2
+e2fsprogs          1.44.5              libext2fs2          1.44.5-1
+faad2              2.8.8               libfaad2            2.8.8-3
+farstream          0.2.8               libfarstream-0.2-5  0.2.8-4.1
+fastJson           0.99.8              libfastjson4        0.99.8-2
+utillinux          2.33.1              libfdisk1           2.33.1-0.1
+libffi.dev         3.2.1               libffi-dev          3.2.1-9
+libffi             3.2.1               libffi6             3.2.1-9
+fftw               3.3.8               libfftw3-double3    3.3.8-2
+fftwFloat          3.3.8               libfftw3-single3    3.3.8-2
+flac               1.3.2               libflac8            1.3.2-3
+flite              2.1.0               libflite1           2.1-release-3
+fluidsynth_1       1.1.11              libfluidsynth1      1.1.11-1
+folks              0.11.4              libfolks-eds25      0.11.4-1+b2
+folks              0.11.4              libfolks25          0.11.4-1+b2
+xlibs.libfontenc   1.1.3               libfontenc1         1:1.1.3-1+b2
+freetype           2.9.1               libfreetype6        2.9.1-3
+freetype.dev       2.9.1               libfreetype6-dev    2.9.1-3
+fribidi            1.0.5               libfribidi-dev      1.0.5-3.1
+fribidi            1.0.5               libfribidi0         1.0.5-3.1
+fuse               2.9.9               libfuse2            2.9.9-1
 ii  libgadu3                             1:1.12.2-3                                     amd64        Gadu-Gadu protocol library - runtime files
 ii  libgbm-dev:amd64                     18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        generic buffer management API -- development files
 ii  libgbm1:amd64                        18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        generic buffer management API -- runtime

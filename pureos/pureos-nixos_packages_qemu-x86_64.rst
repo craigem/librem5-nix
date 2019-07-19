@@ -189,6 +189,10 @@ libcrystalhd3                1:0.0~git20110715.fdd2f19-13  Crystal HD Video Deco
 libdatrie1                   0.2.12-2  Double-array trie library
 libdca0                      0.0.6-1   decoding library for DTS Coherent Acoustics streams
 libdns-export1104            1:9.11.5.P4+dfsg-5.1  Exported DNS Shared Library
+libhandy-0.0-0               0.0.11~509.gbpe1c500  Library with GTK widgets for mobile phones
+libharfbuzz-gobject0         2.3.1-1   OpenType text shaping engine ICU backend (GObject library) (missing from harfbuzz?)
+libhyphen0                   2.8.8-7   ALTLinux hyphenation library - shared library
+libieee1284-3                0.2.11-13   cross-platform library for parallel port access
 
 
 NixOS Package      Version             PureOS Package      Version
@@ -249,6 +253,18 @@ libglvnd           1.0.0               libglvnd-dev        1.1.0-1
 libglvnd           1.0.0               libglvnd0           1.1.0-1
 libGL_driver.drivers   18.3.4          libglx-mesa0        18.3.6-2pureos+librem5.3~118051.gbp615480
 libglvnd           1.0.0               libglx0             1.1.0-1
+libgpgerror        1.34                libgpg-error0       1.35-1
+libgphoto2         2.5.17              libgphoto2-6        2.5.22-3
+libgphoto2         2.5.17              libgphoto2-port12   2.5.22-3
+graphite2          1.3.6               libgraphite2-3      1.3.13-7
+graphite2          1.3.6               libgraphite2-dev    1.3.13-7
+ghostscriptX       9.26                libgs9              9.27~dfsg-2
+ghostscriptX       9.26                libgs9-common       9.27~dfsg-2
+kerberos           1.15.2              libgssapi-krb5-2    1.17-3
+gnome3.gtk         3.24.5              libgtk-3-0          3.24.8+52246+git23fb8e495d-1pureos0
+gnome3.gtk         3.24.5              libgtk-3-common     3.24.8+52246+git23fb8e495d-1pureos0
+gnome3.gtk.dev     3.24.5              libgtk-3-dev        3.24.8+52246+git23fb8e495d-1pureos0
+iibus              1.5.17              libibus-1.0-5       1.5.19-4
 
 
 OK:
@@ -475,62 +491,46 @@ gmpxx              6.1.2               libgmp10            2:6.1.2+dfsg-4
 gnome3.gnome-bluetooth   3.28.2        libgnome-bluetooth13   3.28.2-3
 gnome3.gnome-desktop   3.30.2.2        libgnome-desktop-3-17   3.30.2.1-2
 gnome3.gnome-desktop.dev   3.30.2.2    libgnome-desktop-3-dev   3.30.2.1-2
-ii  libgnutls30                    3.6.7-4                                        amd64        GNU TLS library - main runtime library
-ii  libgoa-1.0-0b                  3.30.1-2                                       amd64        library for GNOME Online Accounts
-ii  libgoa-1.0-common                    3.30.1-2                                       all          library for GNOME Online Accounts - common files
-ii  libgoa-backend-1.0-1           3.30.1-2                                       amd64        backend library for GNOME Online Accounts
-ii  libgomp1                       8.3.0-6                                        amd64        GCC OpenMP (GOMP) support library
-ii  libgpg-error0                  1.35-1                                         amd64        GnuPG development runtime library
-ii  libgpgme11                     1.12.0-6                                       amd64        GPGME - GnuPG Made Easy (library)
-ii  libgphoto2-6                   2.5.22-3                                       amd64        gphoto2 digital camera library
-ii  libgphoto2-port12              2.5.22-3                                       amd64        gphoto2 digital camera port library
-ii  libgpm2                        1.20.7-5                                       amd64        General Purpose Mouse - shared library
-ii  libgraphite2-3                 1.3.13-7                                       amd64        Font rendering engine for Complex Scripts -- library
-ii  libgraphite2-dev               1.3.13-7                                       amd64        Development files for libgraphite2
-ii  libgrilo-0.3-0                 0.3.7-1                                        amd64        Framework for discovering and browsing media - Shared libraries
-ii  libgs9                         9.27~dfsg-2                                    amd64        interpreter for the PostScript language and for PDF - Library
-ii  libgs9-common                        9.27~dfsg-2                                    all          interpreter for the PostScript language and for PDF - common files
-ii  libgsm1                        1.0.18-2                                       amd64        Shared libraries for GSM speech compressor
-ii  libgsound0                     1.0.2-4                                        amd64        small library for playing system sounds
-ii  libgspell-1-1                  1.6.1-2                                        amd64        spell-checking library for GTK+ applications
-ii  libgspell-1-common                   1.6.1-2                                        all          libgspell architecture-independent files
-ii  libgssapi-krb5-2               1.17-3                                         amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
-ii  libgssdp-1.0-3                 1.0.2-4                                        amd64        GObject-based library for SSDP
-ii  libgstreamer-gl1.0-0           1.14.4-2                                       amd64        GStreamer GL libraries
-ii  libgstreamer-plugins-bad1.0-0  1.14.4-1+b1                                    amd64        GStreamer libraries from the "bad" set
-ii  libgstreamer-plugins-base1.0-0 1.14.4-2                                       amd64        GStreamer libraries from the "base" set
-ii  libgstreamer1.0-0              1.14.4-1                                       amd64        Core GStreamer libraries and elements
-ii  libgtk-3-0                     3.24.8+52246+git23fb8e495d-1pureos0            amd64        GTK+ graphical user interface library
-ii  libgtk-3-common                      3.24.8+52246+git23fb8e495d-1pureos0            all          common files for the GTK+ graphical user interface library
-ii  libgtk-3-dev                   3.24.8+52246+git23fb8e495d-1pureos0            amd64        development files for the GTK+ library
-ii  libgtop-2.0-11                 2.38.0-4                                       amd64        gtop system monitoring library (shared)
-ii  libgtop2-common                      2.38.0-4                                       all          gtop system monitoring library (common)
-ii  libgudev-1.0-0                 232-2                                          amd64        GObject-based wrapper library for libudev
-ii  libgupnp-1.0-4                 1.0.3-3                                        amd64        GObject-based library for UPnP
-ii  libgupnp-igd-1.0-4             0.2.5-3                                        amd64        library to handle UPnP IGD port mapping
-ii  libgusb2                       0.3.0-1                                        amd64        GLib wrapper around libusb1
-ii  libgweather-3-15               3.28.2-2                                       amd64        GWeather shared library
-ii  libgweather-common                   3.28.2-2                                       all          GWeather common files
-ii  libgxps2                       0.3.1-1                                        amd64        handling and rendering XPS documents (library)
-ii  libhandy-0.0-0                 0.0.11~509.gbpe1c500                           amd64        Library with GTK widgets for mobile phones
-ii  libharfbuzz-dev                2.3.1-1                                        amd64        Development files for OpenType text shaping engine
-ii  libharfbuzz-gobject0           2.3.1-1                                        amd64        OpenType text shaping engine ICU backend (GObject library)
-ii  libharfbuzz-icu0               2.3.1-1                                        amd64        OpenType text shaping engine ICU backend
-ii  libharfbuzz0b                  2.3.1-1                                        amd64        OpenType text shaping engine (shared library)
-ii  libhogweed4                    3.4.1-1                                        amd64        low level cryptographic library (public-key cryptos)
-ii  libhunspell-1.7-0              1.7.0-2                                        amd64        spell checker and morphological analyzer (shared library)
-ii  libhyphen0                     2.8.8-7                                        amd64        ALTLinux hyphenation library - shared library
-ii  libi2c0                        4.1-1                                          amd64        userspace I2C programming library
-ii  libibus-1.0-5                  1.5.19-4                                       amd64        Intelligent Input Bus - shared library
-ii  libical3                       3.0.4-3                                        amd64        iCalendar library implementation in C (runtime)
-ii  libice-dev                     2:1.0.9-2                                      amd64        X11 Inter-Client Exchange library (development headers)
-ii  libice6                        2:1.0.9-2                                      amd64        X11 Inter-Client Exchange library
-ii  libicu-dev                     63.1-6                                         amd64        Development files for International Components for Unicode
-ii  libicu63                       63.1-6                                         amd64        International Components for Unicode
-ii  libidn11                       1.33-2.2                                       amd64        GNU Libidn library, implementation of IETF IDN specifications
-ii  libidn2-0                      2.0.5-1                                        amd64        Internationalized domain names (IDNA2008/TR46) library
-ii  libiec61883-0                  1.2.0-3                                        amd64        partial implementation of IEC 61883 (shared lib)
-ii  libieee1284-3                  0.2.11-13                                      amd64        cross-platform library for parallel port access
+gnutls             3.6.7               libgnutls30         3.6.7-4
+gnome3.gnome-online-accounts   3.30.2  libgoa-1.0-0b       3.30.1-2
+gnome3.gnome-online-accounts   3.30.2  libgoa-1.0-common   3.30.1-2
+gnome3.gnome-online-accounts   3.30.2  libgoa-backend-1.0-1   3.30.1-2
+gcc8               8.3.0               libgomp1            8.3.0-6
+gpgme              1.12.0              libgpgme11          1.12.0-6
+gpm                1.20.7              libgpm2             1.20.7-5
+gnome3.grilo       0.3.7               libgrilo-0.3-0      0.3.7-1
+gsm                1.0.18              libgsm1             1.0.18-2
+gnome3.gsound      1.0.2               libgsound0          1.0.2-4
+gnome3.gspell      1.8.1               libgspell-1-1       1.6.1-2
+gnome3.gspell      1.8.1               libgspell-1-common  1.6.1-2
+gssdp              1.0.2               libgssdp-1.0-3      1.0.2-4
+gst_all_1.gst-plugins-base   1.14.4    libgstreamer-gl1.0-0   1.14.4-2
+gst_all_1.gst-plugins-bad   1.14.4     libgstreamer-plugins-bad1.0-0   1.14.4-1+b1
+gst_all_1.gst-plugins-base   1.14.4    libgstreamer-plugins-base1.0-0   1.14.4-2
+gst_all_1.gstreamer   1.14.4           libgstreamer1.0-0   1.14.4-1
+gnome3.libgtop     2.38.0              libgtop-2.0-11      2.38.0-4
+gnome3.libgtop     2.38.0              libgtop2-common     2.38.0-4
+gnome3.libgudev    232                 libgudev-1.0-0      232-2
+gupnp              1.0.3               libgupnp-1.0-4      1.0.3-3
+gupnp_igd          0.2.5               libgupnp-igd-1.0-4  0.2.5-3
+gusb               0.3.0               libgusb2            0.3.0-1
+gnome3.libgweather 3.28.2              libgweather-3-15    3.28.2-2
+gnome3.libgweather 3.28.2              libgweather-common  3.28.2-2
+gnome3.libgxps     0.3.1               libgxps2            0.3.1-1
+harfbuzzFull.dev   2.3.1               libharfbuzz-dev     2.3.1-1
+harfbuzzFull.dev   2.3.1               libharfbuzz-icu0    2.3.1-1
+harfbuzz           2.3.1               libharfbuzz0b       2.3.1-1
+nettle             3.4.1               libhogweed4         3.4.1-1
+hunspell           1.7.0               libhunspell-1.7-0   1.7.0-2
+i2c-tools          4.1                 libi2c0             4.1-1
+libical            3.0.4               libical3            3.0.4-3
+xlibs.libICE.dev   1.0.9               libice-dev          2:1.0.9-2
+xlibs.libICE       1.0.9               libice6             2:1.0.9-2
+icu63.dev          63.1                libicu-dev          63.1-6
+icu63              63.1                libicu63            63.1-6
+libidn             1.35                libidn11            1.33-2.2
+libidn2            2.1.1               libidn2-0           2.0.5-1
+libiec61883        1.2.0               libiec61883-0       1.2.0-3
 ii  libijs-0.35                    0.35-14                                        amd64        IJS raster image transport protocol: shared library
 ii  libilmbase23                   2.2.1-2                                        amd64        several utility libraries from ILM used by OpenEXR
 ii  libimobiledevice6              1.2.1~git20181030.92c5462-1                    amd64        Library for communicating with iPhone and other Apple devices

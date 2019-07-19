@@ -235,6 +235,20 @@ geocode-glib       3.26.0              libgeocode-glib0    3.26.1-1
 libglvnd           1.0.0               libgl1              1.1.0-1
 libGL.dev          1.0.0               libgl1-mesa-dev     18.3.6-2pureos+librem5.3~118051.gbp615480
 libGL_driver.drivers   18.3.4          libgl1-mesa-dri     18.3.6-2pureos+librem5.3~118051.gbp615480
+libGL_driver       18.3.4              libglapi-mesa       18.3.6-2pureos+librem5.3~118051.gbp615480
+libglvnd           1.0.0               libgles1            1.1.0-1
+libglvnd           1.0.0               libgles2            1.1.0-1
+libGL_driver.dev   18.3.4              libgles2-mesa-dev   18.3.6-2pureos+librem5.3~118051.gbp615480
+glib               2.58.2              libglib2.0-0        2.58.3-2
+glib.dev           2.58.2              libglib2.0-bin      2.58.3-2
+glib               2.58.2              libglib2.0-data     2.58.3-2
+glib.dev           2.58.2              libglib2.0-dev      2.58.3-2
+glib.dev           2.58.2              libglib2.0-dev-bin  2.58.3-2
+libglvnd.dev       1.0.0               libglvnd-core-dev   1.1.0-1
+libglvnd           1.0.0               libglvnd-dev        1.1.0-1
+libglvnd           1.0.0               libglvnd0           1.1.0-1
+libGL_driver.drivers   18.3.4          libglx-mesa0        18.3.6-2pureos+librem5.3~118051.gbp615480
+libglvnd           1.0.0               libglx0             1.1.0-1
 
 
 OK:
@@ -456,25 +470,11 @@ gfbgraph           0.2.3               libgfbgraph-0.2-0   0.2.3-3
 giflib             5.1.4               libgif7             5.1.4-3
 gobjectIntrospection   1.58.3          libgirepository-1.0-1   1.58.3-2
 libgjs0g           1.54.3              libgjs0g            1.54.3-1
-ii  libglapi-mesa                  18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        free implementation of the GL API -- shared library
-ii  libgles1                       1.1.0-1                                        amd64        Vendor neutral GL dispatch library -- GLESv1 support
-ii  libgles2                       1.1.0-1                                        amd64        Vendor neutral GL dispatch library -- GLESv2 support
-ii  libgles2-mesa-dev              18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        free implementation of the OpenGL|ES 2.x API -- development files
-ii  libglib2.0-0                   2.58.3-2                                       amd64        GLib library of C routines
-ii  libglib2.0-bin                       2.58.3-2                                       amd64        Programs for the GLib library
-ii  libglib2.0-data                      2.58.3-2                                       all          Common files for GLib library
-ii  libglib2.0-dev                 2.58.3-2                                       amd64        Development files for the GLib library
-ii  libglib2.0-dev-bin                   2.58.3-2                                       amd64        Development utilities for the GLib library
-ii  libglvnd-core-dev              1.1.0-1                                        amd64        Vendor neutral GL dispatch library -- core development files
-ii  libglvnd-dev                   1.1.0-1                                        amd64        Vendor neutral GL dispatch library -- development files
-ii  libglvnd0                      1.1.0-1                                        amd64        Vendor neutral GL dispatch library
-ii  libglx-mesa0                   18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        free implementation of the OpenGL API -- GLX vendor library
-ii  libglx0                        1.1.0-1                                        amd64        Vendor neutral GL dispatch library -- GLX support
-ii  libgme0                        0.6.2-1                                        amd64        Playback library for video game music files - shared library
-ii  libgmp10                       2:6.1.2+dfsg-4                                 amd64        Multiprecision arithmetic library
-ii  libgnome-bluetooth13           3.28.2-3                                       amd64        GNOME Bluetooth tools - support library
-ii  libgnome-desktop-3-17          3.30.2.1-2                                     amd64        Utility library for loading .desktop files - runtime files
-ii  libgnome-desktop-3-dev         3.30.2.1-2                                     amd64        Utility library for loading .desktop files - development files
+libgme             0.6.2               libgme0             0.6.2-1
+gmpxx              6.1.2               libgmp10            2:6.1.2+dfsg-4
+gnome3.gnome-bluetooth   3.28.2        libgnome-bluetooth13   3.28.2-3
+gnome3.gnome-desktop   3.30.2.2        libgnome-desktop-3-17   3.30.2.1-2
+gnome3.gnome-desktop.dev   3.30.2.2    libgnome-desktop-3-dev   3.30.2.1-2
 ii  libgnutls30                    3.6.7-4                                        amd64        GNU TLS library - main runtime library
 ii  libgoa-1.0-0b                  3.30.1-2                                       amd64        library for GNOME Online Accounts
 ii  libgoa-1.0-common                    3.30.1-2                                       all          library for GNOME Online Accounts - common files

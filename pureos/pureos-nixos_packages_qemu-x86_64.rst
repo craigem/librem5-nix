@@ -224,6 +224,14 @@ libglvnd           1.0.0               libegl1             1.1.0-1
 libGL_driver.dev   18.3.4              libegl1-mesa-dev    18.3.6-2pureos+librem5.3~118051.gbp615480
 fontconfig.lib     2.12.6              libfontconfig1      2.13.1-2
 fontconfig.dev     2.12.6              libfontconfig1-dev  2.13.1-2
+libGL_driver       18.3.4              libgbm-dev          18.3.6-2pureos+librem5.3~118051.gbp615480
+libGL_driver       18.3.4              libgbm1:amd64       18.3.6-2pureos+librem5.3~118051.gbp615480
+gdk_pixbuf         2.38.0              libgdk-pixbuf2.0-0  2.38.1+dfsg-1
+gdk_pixbuf.dev     2.38.0              libgdk-pixbuf2.0-bin   2.38.1+dfsg-1
+gdk_pixbuf         2.38.0              libgdk-pixbuf2.0-common   2.38.1+dfsg-1
+gdk_pixbuf.dev     2.38.0              libgdk-pixbuf2.0-dev   2.38.1+dfsg-1
+geoclue2           2.5.1               libgeoclue-2-0      2.5.2-1
+geocode-glib       3.26.0              libgeocode-glib0    3.26.1-1
 
 
 OK:
@@ -427,28 +435,20 @@ freetype.dev       2.9.1               libfreetype6-dev    2.9.1-3
 fribidi            1.0.5               libfribidi-dev      1.0.5-3.1
 fribidi            1.0.5               libfribidi0         1.0.5-3.1
 fuse               2.9.9               libfuse2            2.9.9-1
-ii  libgadu3                             1:1.12.2-3                                     amd64        Gadu-Gadu protocol library - runtime files
-ii  libgbm-dev:amd64                     18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        generic buffer management API -- development files
-ii  libgbm1:amd64                        18.3.6-2pureos+librem5.3~118051.gbp615480      amd64        generic buffer management API -- runtime
-ii  libgcc-8-dev:amd64                   8.3.0-6                                        amd64        GCC support library (development files)
-ii  libgcc1:amd64                        1:8.3.0-6                                      amd64        GCC support library
-ii  libgck-1-0:amd64                     3.28.1-1                                       amd64        Glib wrapper library for PKCS#11 - runtime
-ii  libgcr-base-3-1:amd64                3.28.1-1                                       amd64        Library for Crypto related tasks
-ii  libgcr-ui-3-1:amd64                  3.28.1-1                                       amd64        Library for Crypto UI related tasks
-ii  libgcrypt20:amd64                    1.8.4-5                                        amd64        LGPL Crypto library - runtime library
-ii  libgd3:amd64                         2.2.5-5.2                                      amd64        GD Graphics Library
-ii  libgdata-common                      0.17.9-3                                       all          Library for accessing GData webservices - common data files
-ii  libgdata22:amd64                     0.17.9-3                                       amd64        Library for accessing GData webservices - shared libraries
-ii  libgdbm-compat4:amd64                1.18.1-4                                       amd64        GNU dbm database routines (legacy support runtime version)
-ii  libgdbm6:amd64                       1.18.1-4                                       amd64        GNU dbm database routines (runtime version)
-ii  libgdk-pixbuf2.0-0:amd64             2.38.1+dfsg-1                                  amd64        GDK Pixbuf library
-ii  libgdk-pixbuf2.0-bin                 2.38.1+dfsg-1                                  amd64        GDK Pixbuf library (thumbnailer)
-ii  libgdk-pixbuf2.0-common              2.38.1+dfsg-1                                  all          GDK Pixbuf library - data files
-ii  libgdk-pixbuf2.0-dev:amd64           2.38.1+dfsg-1                                  amd64        GDK Pixbuf library (development files)
-ii  libgdm1                              3.30.2-3                                       amd64        GNOME Display Manager (shared library)
-ii  libgee-0.8-2:amd64                   0.20.1-2                                       amd64        GObject based collection and utility library
-ii  libgeoclue-2-0:amd64                 2.5.2-1                                        amd64        convenience library to interact with geoinformation service
-ii  libgeocode-glib0:amd64               3.26.1-1                                       amd64        geocoding and reverse geocoding GLib library using Nominatim
+libgadu            1.11.2              libgadu3            1:1.12.2-3
+gcc8               8.3.0               libgcc-8-dev        8.3.0-6
+gcc8               8.3.0               libgcc1             1:8.3.0-6
+gcr                3.28.1              libgck-1-0          3.28.1-1
+gcr                3.28.1              libgcr-base-3-1     3.28.1-1
+gcr                3.28.1              libgcr-ui-3-1       3.28.1-1
+libcrypt           1.8.4               libgcrypt20         1.8.4-5
+gd                 2.2.5               libgd3              2.2.5-5.2
+gnome3.libgdata    0.17.9              libgdata-common     0.17.9-3
+gnome3.libgdata    0.17.9              libgdata22          0.17.9-3
+gdbm               1.18.1              libgdbm-compat4     1.18.1-4
+gdbm               1.18.1              libgdbm6            1.18.1-4
+gnome3.gdm         3.30.3              libgdm1             3.30.2-3
+gnome3.libgee      0.20.1              libgee-0.8-2        0.20.1-2
 ii  libgfbgraph-0.2-0:amd64              0.2.3-3                                        amd64        GObject library for Facebook Graph API
 ii  libgif7:amd64                        5.1.4-3                                        amd64        library for GIF images (library)
 ii  libgirepository-1.0-1:amd64          1.58.3-2                                       amd64        Library for handling GObject introspection data (runtime library)

@@ -193,6 +193,7 @@ libhandy-0.0-0               0.0.11~509.gbpe1c500  Library with GTK widgets for 
 libharfbuzz-gobject0         2.3.1-1   OpenType text shaping engine ICU backend (GObject library) (missing from harfbuzz?)
 libhyphen0                   2.8.8-7   ALTLinux hyphenation library - shared library
 libieee1284-3                0.2.11-13   cross-platform library for parallel port access
+libipt2                      2.0-2     Intel Processor Trace Decoder Library
 
 
 NixOS Package      Version             PureOS Package      Version
@@ -265,6 +266,10 @@ gnome3.gtk         3.24.5              libgtk-3-0          3.24.8+52246+git23fb8
 gnome3.gtk         3.24.5              libgtk-3-common     3.24.8+52246+git23fb8e495d-1pureos0
 gnome3.gtk.dev     3.24.5              libgtk-3-dev        3.24.8+52246+git23fb8e495d-1pureos0
 iibus              1.5.17              libibus-1.0-5       1.5.19-4
+wirelesstools      30.pre2             libiw30             30~pre9-13
+gnome3.webkitgtk   2.24.1              libjavascriptcoregtk-4.0-18    2.24.3+1320+git923502c69-1pureos0
+lbig2dec           0.14                libjbig2dec0        0.16-1
+kerberos           1.15.2              libk5crypto3        1.17-3
 
 
 OK:
@@ -531,33 +536,28 @@ icu63              63.1                libicu63            63.1-6
 libidn             1.35                libidn11            1.33-2.2
 libidn2            2.1.1               libidn2-0           2.0.5-1
 libiec61883        1.2.0               libiec61883-0       1.2.0-3
-ii  libijs-0.35                    0.35-14                                        amd64        IJS raster image transport protocol: shared library
-ii  libilmbase23                   2.2.1-2                                        amd64        several utility libraries from ILM used by OpenEXR
-ii  libimobiledevice6              1.2.1~git20181030.92c5462-1                    amd64        Library for communicating with iPhone and other Apple devices
-ii  libinput-bin                         1.12.6-2                                       amd64        input device management and event handling library - udev quirks
-ii  libinput-dev                   1.12.6-2                                       amd64        input device management and event handling library - development files
-ii  libinput10                     1.12.6-2                                       amd64        input device management and event handling library - shared library
-ii  libip4tc0                      1.8.2-4                                        amd64        netfilter libip4tc library
-ii  libip6tc0                      1.8.2-4                                        amd64        netfilter libip6tc library
-ii  libipt2                              2.0-2                                          amd64        Intel Processor Trace Decoder Library
-ii  libiptc0                       1.8.2-4                                        amd64        netfilter libiptc library
-ii  libisc-export1100              1:9.11.5.P4+dfsg-5.1                           amd64        Exported ISC Shared Library
-ii  libisl19                       0.20-2                                         amd64        manipulating sets and relations of integer points bounded by linear constraints
-ii  libitm1                        8.3.0-6                                        amd64        GNU Transactional Memory Library
-ii  libiw30                        30~pre9-13                                     amd64        Wireless tools - library
-ii  libjack-jackd2-0               1.9.12~dfsg-2                                  amd64        JACK Audio Connection Kit (libraries)
-ii  libjansson4                    2.12-1                                         amd64        C library for encoding, decoding and manipulating JSON data
-ii  libjavascriptcoregtk-4.0-18    2.24.3+1320+git923502c69-1pureos0              amd64        JavaScript engine library from WebKitGTK
-ii  libjbig0                       2.1-3.1+b2                                     amd64        JBIGkit libraries
-ii  libjbig2dec0                   0.16-1                                         amd64        JBIG2 decoder library - shared libraries
-ii  libjim0.77                     0.77+dfsg0-3                                   amd64        small-footprint implementation of Tcl - shared library
-ii  libjpeg62-turbo                1:1.5.2-2+b1                                   amd64        libjpeg-turbo JPEG runtime library
-ii  libjson-c3                     0.12.1+ds-2                                    amd64        JSON manipulation library - shared library
-ii  libjson-glib-1.0-0             1.4.4-2                                        amd64        GLib JSON manipulation library
-ii  libjson-glib-1.0-common              1.4.4-2                                        all          GLib JSON manipulation library (common files)
-ii  libk5crypto3                   1.17-3                                         amd64        MIT Kerberos runtime libraries - Crypto Library
-ii  libkate1                       0.4.1-9                                        amd64        Codec for karaoke and text encapsulation
-ii  libkeyutils1                   1.6-6                                          amd64        Linux Key Management Utilities (library)
+ijs                0.35                libijs-0.35         0.35-14
+ilmbase            2.3                 libilmbase23        2.2.1-2
+libimobiledevice   2019-04-04          libimobiledevice6   1.2.1~git20181030.92c5462-1
+libinput           1.12.6              libinput-bin        1.12.6-2
+libinput.dev       1.12.6              libinput-dev        1.12.6-2
+libinput           1.12.6              libinput10          1.12.6-2
+iptables           1.8.2               libip4tc0           1.8.2-4
+iptables           1.8.2               libip6tc0           1.8.2-4
+iptables           1.8.2               libiptc0            1.8.2-4
+bind               9.12.4-P2           libisc-export1100   1:9.11.5.P4+dfsg-5.1
+isl                0.20                libisl19            0.20-2
+gcc8               8.3.0               libitm1             8.3.0-6
+jack2              1.9.12              libjack-jackd2-0    1.9.12~dfsg-2
+jansson            2.12                libjansson4         2.12-1
+jbigkit            2.1                 libjbig0            2.1-3.1+b2
+jimtcl             0.78                libjim0.77          0.77+dfsg0-3
+mozjpeg            3.3.1               libjpeg62-turbo     1:1.5.2-2+b1
+json_c             13.1                libjson-c3          0.12.1+ds-2
+json_glib          1.4.4               libjson-glib-1.0-0  1.4.4-2
+json_glib          1.4.4               libjson-glib-1.0-common
+libkate            0.4.1               libkate1            0.4.1-9
+keyutils           1.6                 libkeyutils1        1.6-6
 ii  libklibc                       2.0.6-1                                        amd64        minimal libc subset for use with initramfs
 ii  libkmod2                       26-1                                           amd64        libkmod shared library
 ii  libkpathsea6                   2018.20181218.49446-1                          amd64        TeX Live: path search library for TeX (runtime part)

@@ -189,7 +189,6 @@ libcrystalhd3                1:0.0~git20110715.fdd2f19-13  Crystal HD Video Deco
 libdatrie1                   0.2.12-2  Double-array trie library
 libdca0                      0.0.6-1   decoding library for DTS Coherent Acoustics streams
 libdns-export1104            1:9.11.5.P4+dfsg-5.1  Exported DNS Shared Library
-libhandy-0.0-0               0.0.11~509.gbpe1c500  Library with GTK widgets for mobile phones
 libharfbuzz-gobject0         2.3.1-1   OpenType text shaping engine ICU backend (GObject library) (missing from harfbuzz?)
 libhyphen0                   2.8.8-7   ALTLinux hyphenation library - shared library
 libieee1284-3                0.2.11-13   cross-platform library for parallel port access
@@ -272,8 +271,13 @@ lbig2dec           0.14                libjbig2dec0        0.16-1
 kerberos           1.15.2              libk5crypto3        1.17-3
 
 
-OK:
-===
+OK in Unstable:
+===============
+
+libhandy           0.0.10              libhandy-0.0-0      0.0.11~509.gbpe1c500
+
+OK in 19.03:
+============
 
 accountsservice
 acl

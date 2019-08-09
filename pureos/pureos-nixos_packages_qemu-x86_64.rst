@@ -174,7 +174,7 @@ libcurl3-gnutls               7.64.0-4   - Possibly provided by gnutls
 
 Missing:
 --------
-calls                        0.0.1~184.gbp2f82dc   Make and receive PSTN phone calls
+PR#65364   calls                        0.0.1~184.gbp2f82dc   Make and receive PSTN phone calls
 chatty                       0.0.8~441.gbpc6d93c   XMPP and SMS messaging
 cloud-initramfs-growroot     0.18.debian7          automatically resize the root partition on first boot
 dmeventd                     2:1.02.155-3          Linux Kernel Device Mapper event daemon

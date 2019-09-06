@@ -3,7 +3,7 @@ Librem5-nix
 
 Collection of code to have NixOS_ build for and run on the Librem5_ phone by Purism_.
 
-The canonical home for this repo is https://code.mcwhirter.io/craige/librem5-nix/
+The canonical home for this repo is https://source.mcwhirter.io/craige/librem5-nix/
 
 .. image:: https://mcwhirter.com.au/files/lp_donate.svg
    :target: https://liberapay.com/craige/donate
